@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Portfolio</title>
+		<link rel="stylesheet" href="Css_Portfolio.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+		
+		<style>
+button{
+	font-family: Roboto;
+	font-size: 18px;
+	font-weight: bold;
+	position:relative;
+	padding: 20px 20px 20px 20px;
+	margin: 20px 20px 20px 20px;
+	border:none;
+	border-radius: 20px;
+	box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.50);
+	transition: 0.15s;
+}
+
+.column1{
+	margin: 10px 15px 15px 2px;
+	height: 900px;
+	width: 150px;
+	position: absolute;
+	background-color: blue;
+	box-shadow: 10px 10px 10px rgba(0,0,0,0.5);
+	opacity: 0.8;
+}
+
+.column2{
+	margin: 210px 15px 15px 185px;
+	padding: 10px 10px 250px 170px;
+	height: 100px;
+	width: 150px;
+	display: inline-block;
+	position: absolute;
+	background-color: #F78C1E;
+	box-shadow: 10px 10px 10px rgba(0,0,0,0.5);
+	opacity: 0.8;
+}
+
+.GoogleLogo{
+	position: absolute;
+	display: inline-block;
+	border-radius: 10px;
+	padding: 20px 20px 15px 20px;
+	margin: 20px 20px 20px 30px;
+	background-color: #F78C1E;
+	box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.50);
+	transition: 0.15s;
+}
+
+.GoogleLogo:hover,
+.YouTubeLogo:hover,
+.GmailLogo:hover,
+.MapsLogo:hover,
+.GNewsLogo:hover{
+	opacity:0.7;
+}
+.GoogleLogo:active,
+.YouTubeLogo:active,
+.GmailLogo:active,
+.MapsLogo:active,
+.GNewsLogo:active{
+	opacity:0.5;
+}
+
+.YouTubeLogo{
+	margin-top: 250px;
+	background-color:red;
+	color: white;
+}
+
+.GmailLogo{
+	padding: 10px 10px 10px 10px;
+}
+.GmailPNG{
+	width: 95px;
+}
+
+.MapsLogo{
+	display: inline-block;
+	margin-left: 40px;
+	padding: 10px 10px 10px 10px;
+}
+.MapsPNG{
+	display: inline-block;
+	width: 50px;
+}
+
+.GNewsLogo{
+	display: inline-block;
+	margin-left: 40px;
+	padding: 10px 10px 10px 10px;
+}
+
+.GNewsPNG{
+	display: inline-block;
+	width: 50px;
+}
+
+
+
+			
+			.text1,.text2{
+				display: inline-block;
+				position: relative;
+				font-family: Arial;
+				//border-radius: 10px;
+				box-shadow:10px 10px 10px rgba(0,0,0,0.15);
+				transition: text-decoration 0,15s;
+				padding: 10px 70px 20px 30px;
+				margin: 0px 10px 5px 200px;
+				background-color: white;
+				cursor: pointer;
+			}
+			
+			.text1{
+				margin-top: 0px;
+				padding-bottom: 35px;
+				width: 200px;
+			}
+			.title-text1{
+				position: relative;
+				font-size: 14px;
+				width: 290px;
+				padding-top: 5px;
+				padding-left: 10px;
+				//border-radius: 10px;
+				background-color: white;
+				margin: 300px 10px 0px 200px;
+				box-shadow:10px 10px 10px rgba(0,0,0,0.15);
+			}
+			
+			.title-text2{
+				position: relative;
+				font-size: 14px;
+				width: 290px;
+				padding-top: 5px;
+				padding-left: 10px;
+				//border-radius: 10px;
+				background-color: white;
+				margin: 5px 10px 0px 200px;
+				box-shadow:10px 10px 10px rgba(0,0,0,0.15);
+			}
+			
+			.text2{
+				width: 150px;
+				padding-right: 120px;
+			}
+			
+			.text1:hover,.text2:hover{
+				text-decoration: underline;
+			}
+			
+a{
+	color: black;
+	text-decoration: none;
+}
+.YoutubeList{
+	margin: 200px 10px 10px 10px;
+	margin-left: 1000px;
+	width: 380px;
+	height: 480px;
+	background-color: blue;
+	display:grid;
+	row-gap: 30px;
+	grid-template-rows: 30px 100px 100px 100px;
+	box-shadow: 10px 10px 10px rgba(0,0,0, 0.5);
+}
+
+.Yblock1,.Yblock2,.Yblock3{
+	box-shadow: 10px 10px 10px rgba(0,0,0, 0.5);
+	font-family: Arial;
+	display: inline-block;
+	border-radius: 10px;
+	width: 300px;
+	margin: 32px 10px 10px 26px;
+	padding: 8px 20px 100px 8px;
+} 
+.Yblock2{
+}
+.Yblock3{
+}
+.Yblock1:hover,
+.Yblock2:hover,
+.Yblock3:hover{
+	text-decoration: underline;	
+}
+.YoutubeLOGO{
+	display: inline-block;
+	margin: 15px 10px 10px 10px;
+	width: 60px;
+}
+			
+.thumbnail1,.thumbnail2,.thumbnail3{
+	position: absolute;
+	width: 140px;
+	margin-left: 30px;
+	border-radius: 10px;
+}
+
+.timer1,.timer2,.timer3{
+	display:in-line block;
+	background-color: black;
+	opacity: 0.8;
+	color: white;
+	font-size: 15px;
+	border-radius: 6px;
+	margin: 60px 10px 10px 130px;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+</style>
+		
+		
+	</head>
+	<body style="background-color: #F1F1ED; font-family:Arial;">
+		<div style="display:grid; grid-template-columns: 100px 100px 100px 100px;">
+			<div class="target1">
+				<div class="column1"></div>
+				<div class="GoogleLogo">
+					<a href="https://www.google.com/" target="_blank">
+						<img src="google_icon.png">
+				</div>
+				<div>
+					<a href="https://www.youtube.com" target="_blank">
+						<button class="YouTubeLogo">
+							YouTube
+						</button>
+					</a>
+				</div>
+				
+				<div>
+					<a href="https://mail.google.com/mail/u/0/#inbox" target="_blank">
+						<button class="GmailLogo">
+							<img class="GmailPNG"src="gmail_icon.png">
+						</button>
+					</a>
+				</div>
+				
+				<div>
+					<a href="https://www.google.com/maps/" target="_blank">
+						<button class="MapsLogo">
+							<img class="MapsPNG" src="maps_icon.png">
+						</button>
+					</a>
+				</div>
+				
+				<div>
+					<a href="https://news.google.com/home?hl=pt-BR&gl=BR&ceid=BR:pt-419" target="_blank">
+						<button class="GNewsLogo">
+							<img class="GNewsPNG" src="gnews_icon.png">
+						</button>
+					</a>
+				</div>
+			</div>
+					
+				<div style="border-radius: 10px;">
+					<div class="column2">
+						<img src="gnews_icon.png" style="display: inline-block; width: 80px; margin-left: 70px;">
+					</div>
+					
+					<div class="grid1">
+						<a href="https://www.em.com.br/gerais/2025/04/7120297-betim-na-grande-bh-registra-tremor-de-terra.html" target="_blank">
+						<p class="title-text1"> Estado de Minas </p>
+						<p class="text1">Betim, na Grande BH, registra tremor de terra</p>
+						</a>
+					</div>
+					<div class="grid2">
+						<a href="https://www.adrenaline.com.br/games/pc-games/oblivion-remastered-ultrapassa-100-mil-jogadores-na-steam-poucas-horas-apos-o-lancamento/" target="_blank">
+						<p class="title-text2"> Adrenaline </p>
+						<p class="text2">Oblivion Remastered ultrapassa 100 mil jogadores na Steam</p>
+						</a>
+					</div>
+				</div>
+				
+				<div class="YoutubeList">
+			<img class="YoutubeLOGO" src="youtube_icon.png">
+			<div class="Yblock1" style="background-color: orange";>
+				<a href="https://www.youtube.com/watch?v=7mSH86O2qzA" target="_blank">
+					<div>
+						<div style="display: inline-block;">
+							Omeleto
+						</div>
+							<div style="margin-left: 20px;  display:grid; grid-template-columns: 100px 1fr;">
+								<div style="margin-top: 20px;">
+									STALLED
+								</div>
+								<div>
+									<img class="thumbnail1" src="hq720.avif">
+									<div class="timer1">
+										19:56
+									</div>
+								</div>
+							</div>
+					</div>
+				</a>
+			</div>
+			
+			<div class="Yblock2" style="background-color: red;">
+				<a href="https://www.youtube.com/watch?v=IHQr0HCIN2w" target="_blank">
+					<div>
+						<div style="display: inline-block;">
+							RocketJump
+						</div>
+							<div style="margin-left: 20px;  display:grid; grid-template-columns: 100px 1fr;">
+								<div style="margin-top: 20px;">
+									Mexican Standoff (ft. Key & Peele)
+								</div>
+								<div>
+									<img class="thumbnail2" src="hq720_1.avif">
+									<div class="timer2">
+										05:03
+									</div>
+								</div>
+							</div>
+					</div>
+				</a>
+			</div>
+			<div class="Yblock2" style="background-color: green;">
+				<a href="https://www.youtube.com/watch?v=kqCV-HGJc6A&t=108s&pp=ygURYnVpbGRpbmcgYSBvcCBhbXA%3D" target="_blank">
+					<div>
+						<div style="display: inline-block;">
+							GreatScott!
+						</div>
+							<div style="margin-left: 20px;  display:grid; grid-template-columns: 100px 1fr;">
+								<div style="margin-top: 20px; font-size: 13px;">
+									Electronic Basics #21: OpAmp (Operational Amplifier)
+								</div>
+								<div>
+									<img class="thumbnail3" src="hq720_2.avif">
+									<div class="timer3">
+										06:01
+									</div>
+								</div>
+							</div>
+					</div>
+				</a>
+			</div>
+		</div>
+		
+		
+		
+		</div>
+		
+	
+	</body>
+</html>
